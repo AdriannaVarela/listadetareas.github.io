@@ -1,0 +1,309 @@
+*::before::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: white;
+}
+
+body {
+    height: 100vh;
+    justify-content: center;
+    background-image: linear-gradient(rgb(158, 45, 158), rgb(196, 124, 207));
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: rgb(247, 175, 232);
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    margin: 50px auto ;
+    padding: 1rem;
+    height: 60%;
+}
+
+#main-container h1 {
+    color:rgb(158, 45, 158);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.caja2{
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    justify-content: center;
+    display: flex;
+    flex-direction: end;
+    border-color: blueviolet;
+    border-width: 2rem;
+}
+
+#Lista {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    overflow: inherit;
+}
+
+#contador-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#task-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgb(247, 175, 232);
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    margin: 50px auto ;
+    padding: 1rem;
+}
+
+    
+
+#Tarea {
+    border-color: purple;
+    margin-right: 10px;
+    height: 30px;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    width: 70%;
+}
+
+.tarea-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+#main-tareas{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.delete {
+    background-color:white;
+    margin-right: 10px;
+    border-radius: 0.5rem;
+    border-width: 3px;
+    border-color: purple;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+    width: 2rem;
+}
+
+.delete-btn > svg {
+    color:purple;
+    width: 1.5rem;
+    height: 1rem;
+}
+
+#delete:hover{
+    background-color: purple;
+    color: white;
+}
+
+.total {
+    font-size: 3rem;
+    width: 3rem;
+    background-color: purple;
+}
+
+.list-element {
+    background-color: rgb(255, 250, 250);
+    display: flex;
+    flex-grow: 1;
+    margin: 0;
+    align-items: center;
+    border: 1px solid purple;
+    border-radius: 0.5rem;
+    overflow: visible;
+    resize: none;
+}
+
+
+.check {
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-radius: 0.5rem;
+    border-width: 3px;
+    border-color: purple;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+    width: 2rem;
+    height: 2rem;
+}
+
+.check-btn > svg {
+    color:purple;
+    width: 2rem;
+    height: 2rem;
+}
+
+#check:hover {
+    background-color: purple;
+    color: white;
+}
+
+#add {
+    background-color: rgb(248, 247, 249);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    border-width: 3px;
+    border-color: purple;
+    display: flex;
+    transition: all 0.1s ease-in;
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+}
+
+#add:hover {
+    background-color: purple;
+    color: white;
+} 
+
+.add-btn > svg {
+    color:purple;
+    width: 1.5rem;
+    height: 2rem;
+}
+
+#total {
+    background-color: purple;
+    color: white;
+    font-size: 1rem;
+    border-radius:0.5rem ;
+    -webkit-border-radius:0.5rem ;
+    -moz-border-radius:0.5rem ;
+    -ms-border-radius:0.5rem ;
+    -o-border-radius:0.5rem ;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    margin: 10px;
+    padding: 7px;
+    }
+
+#completed {
+    background-color: purple;
+    color: white;
+    font-size: 1rem;
+    border-radius:0.5rem ;
+    -webkit-border-radius:0.5rem ;
+    -moz-border-radius:0.5rem ;
+    -ms-border-radius:0.5rem ;
+    -o-border-radius:0.5rem ;
+    text-align: center;
+    width: 120px;
+    height: 20px;
+    margin: 10px;
+    padding: 7px;
+}
+
+#incompleted {
+    background-color: purple;
+    color: white;
+    font-size: 1rem;
+    border-radius:0.5rem ;
+    text-align: center;
+    width: 120px;
+    height: 20px;
+    margin: 10px;
+    padding: 7px;
+}
+
+.chequeada {
+    text-decoration: line-through;
+	color: rgb(30, 213, 30);
+}
+
+.btnCheck {
+    border: 3px solid;
+    border-color: rgb(15, 163, 15);
+    background: rgb(15, 163, 15);
+    color: white;
+}
+
+#btn-add.disabled {
+    color: rgb(129, 44, 78);
+}
+
+.btnCheck {
+    border: 3px solid;
+    border-color: rgb(15, 163, 15);
+    background: rgb(15, 163, 15);
+    color: white;
+}
+
+.chequeada {
+    text-decoration: line-through;
+	color: rgb(30, 213, 30);
+}
+
+
+@media (max-width: 768px) {
+    #main-container {
+      width: 70%;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #main-tareas {
+      width: 70%;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #Lista {
+      width: 70%;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    #contador-container {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
